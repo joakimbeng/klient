@@ -13,7 +13,7 @@ module.exports = exports = function init (options) {
     return {
       service: Promise.promisify(api.service),
       services: Promise.promisify(api.services),
-      value: Promise.promisify(api.value)
+      value: Promise.promisify(api.value),
       values: Promise.promisify(api.values)
     }
   }
