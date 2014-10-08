@@ -12,8 +12,16 @@
     "test": "NULL"
   },
   "keywords": [
-    "docker"
+    "docker",
+    "katalog"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joakimbeng/klient.git"
+  },
+  "bugs": {
+    "url": "http://github.com/joakimbeng/klient/issues"
+  },
   "author": "Joakim Carlstein <joakim@klei.se>",
   "license": "MIT"
 }
