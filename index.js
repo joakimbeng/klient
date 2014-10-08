@@ -21,7 +21,7 @@ module.exports = exports = function init (options) {
   return api;
 };
 
-function getService (host, service, opts, cb) {
+function getService (host, service, cb) {
   request(host + '/service/' + service, {json: true}, function (err, res, services) {
     if (err) {
       return cb(err);
