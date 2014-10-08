@@ -1,0 +1,19 @@
+{
+  "name": "klient",
+  "version": "0.1.0",
+  "description": "A client for Katalog, the simple Docker service catalog and discovery application",
+  "main": "index.js",
+  "dependencies": {
+    "bluebird": "^2.3.5",
+    "request": "^2.45.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "NULL"
+  },
+  "keywords": [
+    "docker"
+  ],
+  "author": "Joakim Carlstein <joakim@klei.se>",
+  "license": "MIT"
+}
