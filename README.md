@@ -7,7 +7,8 @@ klient
 
 ```javascript
 var klient = require('klient')({
-  host: 'http://<host/ip for Katalog>:<katalog port>'
+  host: 'http://<host/ip for Katalog>:<katalog port>',
+  autoclear: true/false
 });
 
 klient.service('<service name>', function (err, nodes) {
@@ -16,6 +17,10 @@ klient.service('<service name>', function (err, nodes) {
 
 klient.value('<key name>', function (err, value) {
   // Get a value from the Katalog key/value store
+});
+
+klient.vhosts(function (err, hosts) {
+  // Get all virtual hosts from Katalog
 });
 ```
 
@@ -27,6 +32,16 @@ klient.value('<key name>', function (err, value) {
 
 
 The full URI to the Katalog API.
+
+
+#### `autoclear`
+
+**Type:** `Boolean`
+
+**Default:** `false`
+
+
+If set items from the internal response cache are removed if they've been there for more than 3 hours.
 
 
 #### `promise`
